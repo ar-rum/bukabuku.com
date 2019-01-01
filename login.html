@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BukaBuku.com</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/business-casual.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="logincss.css">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
+    
+
+  </head>
+
+  <body>
+
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+      <span class="site-heading-upper text-primary mb-3"> Get Your Own Book</span>
+      <span class="site-heading-lower">BukaBuku</span>
+    </h1>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">BukaBuku.com</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="products.html">Products</a>
+            </li>
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="store.html">Store</a>
+            </li>
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="login.html">Contact and Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <center>
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1"> Alamat Kami </a></li>
+        <li><a href="#tabs-2"> E-mail Kami</a></li>
+        <li><a href="#tabs-3"> Nomor Telepon</a></li>     
+      </ul>    
+    <div id="tabs-1">
+      <p> Jalan sidorejo Kecamatan Karangjati Kabupaten Ngawi</p>
+    </div>
+    <div id="tabs-2">
+      <p> bukabuku@gmail.com</p>
+    </div>
+    <div id="tabs-3">
+      <p> 0331 5005</p>
+    </div>
+  </div>
+  </center>
+
+    <div class="login">
+    <h2 class="login-header">Form Login</h2>
+        <form class="login-container">
+            <p>
+                <input type="email" placeholder="Email">
+            </p>
+            <p>
+                <input type="password" placeholder="Password">
+            </p>
+            <p>
+                <input type="submit" value="Log in">
+            </p>
+        </form>
+    </div>
+    <center>
+    <div id="draggable" class="ui-widget-content">
+      <button id="bukaDialog"> Click This Button </button>
+        <div id="dialog" title="Hello Gess">
+          Login dengan menggunakan Email pribadi   
+        </div>
+    </div>  
+    </center>  
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+        <p class="m-0 small">Copyright &copy; BukaBuku.com 2018</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+
+
+  </body>
+
+  <!-- Script to highlight the active date in the hours list -->
+  
+  <script>
+    $('#dialog').dialog ({ autoOpen: false});
+    $('#bukaDialog').click(function() {
+      $('#dialog').dialog("open")
+    });
+
+    $( function() {
+    $( "#tabs" ).tabs();
+    } );
+
+    $('.list-hours li').eq(new Date().getDay()).addClass('today');
+  </script>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BukaBuku.com</title>
+    <style>
+    .audioku { background-color:skyblue; width: 725px;}
+    #sortable { list-style-type: none; margin: 0; padding: 0; width: 40%; background-color: brown;}
+    #sortable li { margin: 3px 3px 3px 3px; padding: 0.4em; padding-bottom: 0.4em; padding-left: 1.5em; font-size: 1em; height: 40px; background-color: white; }
+    #sortable li span { position: absolute; margin-left: -1.3em;  font-family: consolas; text-align: center;  width: 40%; color: black}
+
+    </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/business-casual.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
+    
+
+  </head>
+
+  <body>
+
+    <h1 class="site-heading text-center text-white">
+      <span class="site-heading-upper text-primary mb-3 text-white"> Get Your Own Book</span>
+      <span class="site-heading-lower">BukaBuku</span>
+    </h1>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">BukaBuku.com</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="products.html">Products</a>
+            </li>
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="store.html">Store</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="login.html">Contact and Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+
+    <section class="page-section about-heading">
+      <div class="container">
+        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/about.jpg" alt="">
+        <div class="about-heading-content">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+              <div class="bg-faded rounded p-5">
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-upper text-center">Beri Makan Otakmu dengan Membaca Buku</span>
+                  <span class="section-heading-lower text-center">About Our Bookstore</span>
+                </h2>
+                
+                <audio id="audio" class="audioku"  src="oasisexo.mp3"  controls ></audio>
+                <div id="accordion">
+                  <h3> BukaBuku.com </h3>
+                    <div> BukaBuku adalah salah satu Toko Buku Online yang menyediakan buku-buku best seller  </div>
+                  <h3> Cara Order dan Pembelian </h3>
+                    <div> Sebelum membeli, setiap pembeli harus login melalui email atau media sosial. Setelah itu, akan ada halaman bagaimana metode pembayaran. </div>
+                  <h3> Mengapa Harus BukaBuku.com </h3>
+                      <div> Karena Buku yang ada di situs ini original dan best seller</div>
+                </div>
+                <center>
+                <font color="Black" size="14" face="Gabriola"> Buku Terbanyak Dibeli </font>
+                <p><font> Cari Buku &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                  <input id="autocomplete" title="type &quot;a&quot;">
+                </font></p>
+                <ul id="sortable">
+                  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> RandoK - Time Of Your Life </li>
+                  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> TereLiye - Hujan</li>
+                  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> Arum- Chance For Choose</li>
+                  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> TyassE - Dance For Two </li> 
+                  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> Fiersa Besari 11:11</li>
+                  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> Boy Chandra- Satu Hari di 2018</li> 
+                </center>  
+                </ul>
+
+                <center><font color="Black" size="14" face="Gabriola"> Buku Diskon 50% </font></center>
+        <table width="70%" height="300" border="" align="center">
+        <tr bgcolor="yellow" align="center">
+          <th > Judul Buku </th>
+          <th> Harga Buku </th>
+          <th> Penulis </th>
+          <th> Tahun Terbit </th>
+          <th> Serang</th>
+        </tr> 
+        <tr>
+          <td align="center"> Time Of Your Life</td>
+          <td align="center"> Rp. 75.000 </td>
+          <td align="center"> Rando Kim</td>
+          <td align="center"> 2017</td>
+          <td align="center"><a href="login.html"> Beli</td></a>
+
+        </tr>
+        <tr>
+          <td align="center"> Monolog Aldy</td>
+          <td align="center"> Rp.100.000</td>
+          <td align="center"> Agus Dermawan T</td>
+          <td align="center"> 2018</td>
+          <td align="center" > <a href="login.html">Beli</td></a>
+        </tr>
+        <tr align="center">
+          <td> Aku Memilih pergi</td>
+          <td> Rp.60.000</td>
+          <td> Tereza Pahlevi</td>
+          <td> 2018</td>
+          <td > <a href="login.html">Beli</td></a>
+        </tr>
+        <tr align="center" >
+          <td> Amor Fati</td>
+          <td> Rp.75.000</td>
+          <td> Rando Kim</td>
+          <td> 2017</td>
+          <td > <a href="login.html">Beli</td></a>
+
+        </tr>
+        </table>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+        <p class="m-0 small">Copyright &copy; Your Website 2018</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+
+  </body>
+
+  <!-- Script to highlight the active date in the hours list -->
+  <script>
+  var availableTags= [
+  "Aku Jatuh Cinta",
+  "Hujan",
+  "Satu Hari di 2018",
+  "dance For Two",
+  " Laskar Pelangi "
+  ];
+
+  $("#autocomplete").autocomplete({
+    source : availableTags
+    
+  });
+
+    $( function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+    } );
+
+    $("#accordion").accordion();
+    $(function (){
+    $('#dialog').dialog({ autoOpen: false});
+    $('#bukaDialog').click(function() {
+      $('#dialog').dialog("open");
+    });
+    });
+
+    $('.list-hours li').eq(new Date().getDay()).addClass('today');
+  </script>
+
+</html>
